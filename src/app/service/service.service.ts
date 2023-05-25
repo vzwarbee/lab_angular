@@ -13,4 +13,14 @@ export class UserService {
   getUser(): Observable<any> {
     return this._http.get("http://localhost:3000/user")
   }
+  getUserDetail(id: number): Observable<any> {
+    return this._http.get("http://localhost:3000/user/" + id)
+  }
+  getProductDetail(id: number): Observable<any> {
+    return this._http.get("http://localhost:3000/product/" + id)
+  }
+
+  getProduct(): Observable<any> {
+    return this._http.get("http://localhost:3000/product/")
+  }
 }

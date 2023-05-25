@@ -1,8 +1,24 @@
-section{
+.home__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+}
+
+.section{
     display: grid;
     flex-wrap: wrap;
     gap: 20px;
     grid-template-columns: 1fr auto auto;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+    transition: .3s;
+}
+a:hover {
+    color: #859ba8;
 }
 
 .card {

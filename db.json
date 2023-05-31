@@ -15,100 +15,97 @@
   ],
   "user": [
     {
-    "id": 1,
-    "name": "Áp lực thiếu tiền",
-    "position": "CEO",
-    "avatar": "https://i.pinimg.com/564x/0c/d2/f2/0cd2f294741e9a3d03f0bacdd6e60d8f.jpg",
-    "desc": "Hòa đồng, Thân thiện, Hiền lành it nói được cái làm gì cũng giỏi giỏi ăn, giỏi nói, giỏi đua xe",
-    "social": {
-      "linkedin": "adsad",
-      "facebook": "dadsa",
-      "twitter": "sadsa"
+      "id": 1,
+      "name": "Áp lực thiếu tiền",
+      "position": "CEO",
+      "avatar": "https://i.pinimg.com/564x/0c/d2/f2/0cd2f294741e9a3d03f0bacdd6e60d8f.jpg",
+      "desc": "Hòa đồng, Thân thiện, Hiền lành it nói được cái làm gì cũng giỏi giỏi ăn, giỏi nói, giỏi đua xe",
+      "social": {
+        "linkedin": "adsad",
+        "facebook": "dadsa",
+        "twitter": "sadsa"
+      },
+      "post": []
     },
-    "post": []
-  },
-  {
-    "id": 2,
-    "name": "Áp lực uống nước",
-    "position": "CEO",
-    "avatar": "https://i.pinimg.com/564x/c9/0d/b0/c90db02eec4db46e1971cf460fe83fde.jpg",
-    "desc": "Hòa đồng, Thân thiện, Hiền lành it nói được cái làm gì cũng giỏi giỏi ăn, giỏi nói, giỏi đua xe",
-    "social": {
-      "linkedin": "adsad",
-      "facebook": "dadsa",
-      "twitter": "sadsa"
+    {
+      "id": 2,
+      "name": "Áp lực uống nước",
+      "position": "CEO",
+      "avatar": "https://i.pinimg.com/564x/c9/0d/b0/c90db02eec4db46e1971cf460fe83fde.jpg",
+      "desc": "Hòa đồng, Thân thiện, Hiền lành it nói được cái làm gì cũng giỏi giỏi ăn, giỏi nói, giỏi đua xe",
+      "social": {
+        "linkedin": "adsad",
+        "facebook": "dadsa",
+        "twitter": "sadsa"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Áp lực Yasuo",
+      "position": "CEO",
+      "avatar": "https://i.pinimg.com/564x/0e/1c/f0/0e1cf00605082d11da6385459a3a1687.jpg",
+      "desc": "Hòa đồng, Thân thiện, Hiền lành it nói được cái làm gì cũng giỏi giỏi ăn, giỏi nói, giỏi đua xe",
+      "social": {
+        "linkedin": "adsad",
+        "facebook": "dadsa",
+        "twitter": "sadsa"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Áp lực ăn tốn tiền",
+      "position": "CEO",
+      "avatar": "https://i.pinimg.com/564x/cf/d5/e7/cfd5e713a7d827d6a42c6120e26f5ccb.jpg",
+      "desc": "Hòa đồng, Thân thiện, Hiền lành it nói được cái làm gì cũng giỏi giỏi ăn, giỏi nói, giỏi đua xe",
+      "social": {
+        "linkedin": "adsad",
+        "facebook": "dadsa",
+        "twitter": "sadsa"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Áp lực nhiều tiền",
+      "position": "CEO",
+      "avatar": "https://i.pinimg.com/564x/90/ec/18/90ec1869964e627b7c1fe88ac5e91031.jpg",
+      "desc": "Hòa đồng, Thân thiện, Hiền lành it nói được cái làm gì cũng giỏi giỏi ăn, giỏi nói, giỏi đua xe",
+      "social": {
+        "linkedin": "adsad",
+        "facebook": "dadsa",
+        "twitter": "sadsa"
+      }
     }
-  },
-  {
-    "id": 3,
-    "name": "Áp lực Yasuo",
-    "position": "CEO",
-    "avatar": "https://i.pinimg.com/564x/0e/1c/f0/0e1cf00605082d11da6385459a3a1687.jpg",
-    "desc": "Hòa đồng, Thân thiện, Hiền lành it nói được cái làm gì cũng giỏi giỏi ăn, giỏi nói, giỏi đua xe",
-    "social": {
-      "linkedin": "adsad",
-      "facebook": "dadsa",
-      "twitter": "sadsa"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Áp lực ăn tốn tiền",
-    "position": "CEO",
-    "avatar": "https://i.pinimg.com/564x/cf/d5/e7/cfd5e713a7d827d6a42c6120e26f5ccb.jpg",
-    "desc": "Hòa đồng, Thân thiện, Hiền lành it nói được cái làm gì cũng giỏi giỏi ăn, giỏi nói, giỏi đua xe",
-    "social": {
-      "linkedin": "adsad",
-      "facebook": "dadsa",
-      "twitter": "sadsa"
-    }
-  },
-  {
-    "id": 5,
-    "name": "Áp lực nhiều tiền",
-    "position": "CEO",
-    "avatar": "https://i.pinimg.com/564x/90/ec/18/90ec1869964e627b7c1fe88ac5e91031.jpg",
-    "desc": "Hòa đồng, Thân thiện, Hiền lành it nói được cái làm gì cũng giỏi giỏi ăn, giỏi nói, giỏi đua xe",
-    "social": {
-      "linkedin": "adsad",
-      "facebook": "dadsa",
-      "twitter": "sadsa"
-    }
-  }
   ],
-  "product" : [
-     {
- "id": 1,
- "productName": "Leaf Rake",
- "productCode": "GDN-0011",
- "releaseDate": "March 19, 2016",
- "description": "Leaf rake with 48-inch wooden handle.",
- "price": 19.95,
- "starRating": 3.2,
- "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
- },
- {
- "id": 2,
- "productName": "Garden Cart",
- "productCode": "GDN-0023",
- "releaseDate": "March 18, 2016",
- "description": "15 gallon capacity rolling garden cart",
- "price": 32.99,
- "starRating": 4.2,
- "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
- },
- {
- "id": 5,
- "productName": "Hammer",
- "productCode": "TBX-0048",
- "releaseDate": "May 21, 2016",
- "description": "Curved claw steel hammer",
- "price": 8.9,
- "starRating": 4.8,
- "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
- }
-
+  "product": [
+    {
+      "id": 1,
+      "productName": "Leaf Rake",
+      "productCode": "GDN-0011",
+      "releaseDate": "March 19, 2016",
+      "description": "Leaf rake with 48-inch wooden handle.",
+      "price": 19.95,
+      "starRating": 3.2,
+      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+    },
+    {
+      "id": 2,
+      "productName": "Garden Cart",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "starRating": 4.2,
+      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+    },
+    {
+      "id": 5,
+      "productName": "Hammer",
+      "productCode": "TBX-0048",
+      "releaseDate": "May 21, 2016",
+      "description": "Curved claw steel hammer",
+      "price": 8.9,
+      "starRating": 4.8,
+      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+    }
   ]
-
-
 }

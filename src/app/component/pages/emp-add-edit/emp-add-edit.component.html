@@ -1,0 +1,93 @@
+<div mat-dialog-title>
+  <h1>add nhan vien</h1>
+</div>
+
+<form (ngSubmit)="onFormSubmit()" [formGroup]="empForm">
+  <div mat-dialog-content>
+    <div class="example-container">
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Link image</mat-label>
+          <input
+            matInput
+            type="text"
+            placeholder="Enter Link Image"
+            formControlName="imageUrl"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Name product</mat-label>
+          <input
+            matInput
+            type="text"
+            placeholder="Enter Name Product"
+            formControlName="productName"
+          />
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Code</mat-label>
+          <input
+            matInput
+            type="text"
+            placeholder="enter Code"
+            formControlName="productCode"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Choose a date</mat-label>
+          <input
+            matInput
+            [matDatepicker]="picker"
+            formControlName="releaseDate"
+          />
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle
+            matIconSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label> description</mat-label>
+          <input
+            matInput
+            type="text"
+            placeholder="enter description"
+            formControlName="description"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Price</mat-label>
+          <input
+            matInput
+            type="number"
+            placeholder="enter Price"
+            formControlName="price"
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Rating Star</mat-label>
+          <mat-select formControlName="starRating">
+            <mat-option *ngFor="let val of rating" [value]="val">
+              {{ val }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button>Cancel</button>
+    <button mat-raised-button color="primary" type="submit">
+      {{ data ? "Update" : "Save" }}
+    </button>
+  </div>
+</form>

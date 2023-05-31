@@ -23,4 +23,16 @@ export class UserService {
   getProduct(): Observable<any> {
     return this._http.get("http://localhost:3000/product/")
   }
+
+
+  addProduct(data: any): Observable<any> {
+    return this._http.post("http://localhost:3000/product", data)
+  }
+
+  updateProduct(id: number, data: any): Observable<any> {
+    return this._http.put(`http://localhost:3000/product/${id}`, data)
+  }
+  deleteProduct(id: number): Observable<any> {
+    return this._http.delete(`http://localhost:3000/product/${id}`)
+  }
 }

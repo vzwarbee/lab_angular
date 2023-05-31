@@ -1,4 +1,11 @@
 <div class="card">
+  <mat-toolbar color="primary">
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button (click)="openAddEditEmpForm()">
+      Add nhaan vien
+    </button>
+  </mat-toolbar>
   <div class="card-header">
     <h4>Product list</h4>
   </div>
@@ -20,18 +27,26 @@
           <th>Available</th>
           <th>Price</th>
           <th>5 Star Rating</th>
+          <th>Action</th>
         </tr>
+      </thead>
+      <tbody>
         <tr *ngFor="let item of listProduct">
           <td><img [src]="item.imageUrl" width="50px" /></td>
           <td>
-            <a href="product/1">{{ item.productName }}</a>
+            <a [href]="'product/' + item.id">{{ item.productName }}</a>
           </td>
           <td>{{ item.productCode }}</td>
           <td>{{ item.releaseDate }}</td>
           <td>{{ item.price }}</td>
-          <td>{{ item.starRating }}</td>
+          <td><app-star [rating]="item.starRating"></app-star></td>
+          <td class="d-flex gap-3" style="padding-bottom: 42px">
+            <button (click)="delProduct(item.id)" class="text-danger border-0">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </td>
         </tr>
-      </thead>
+      </tbody>
     </table>
   </div>
 </div>

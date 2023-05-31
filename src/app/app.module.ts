@@ -10,6 +10,19 @@ import { CardPostComponent } from './component/UI/card-post/card-post.component'
 import { StarComponent } from './component/UI/star/star.component';
 import { ListProductComponent } from './component/pages/list-product/list-product.component';
 import { ProductDetailComponent } from './component/pages/product-detail/product-detail.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { EmpAddEditComponent } from './component/pages/emp-add-edit/emp-add-edit.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 const routes: Routes = [
@@ -40,14 +53,29 @@ const routes: Routes = [
     HomeComponent,
     StarComponent,
     ListProductComponent,
-    ProductDetailComponent
+    EmpAddEditComponent,
+    ProductDetailComponent,
+
+
 
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatToolbarModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatButtonModule,
+    MatInputModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    ReactiveFormsModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

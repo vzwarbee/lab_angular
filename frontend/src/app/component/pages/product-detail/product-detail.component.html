@@ -1,0 +1,50 @@
+<!-- <div class="card" *ngIf="detailProduct">
+  <div class="card-header">
+    {{ detailProduct.productName }}
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row mb-2">
+          <div class="col-md-3">Name:</div>
+          <div class="col-md-6 fs-4">{{ detailProduct.productName }}</div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-3">Code:</div>
+          <div class="col-md-6">
+            {{ detailProduct.productCode | lowercase }}
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-3">Description:</div>
+          <div class="col-md-6">{{ detailProduct.description }}</div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-3">Availability:</div>
+          <div class="col-md-6">{{ detailProduct.releaseDate }}</div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-3">Price:</div>
+          <div class="col-md-6">
+            {{ detailProduct.price | currency : "USD" : true }}
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-3">5 Star Rating:</div>
+          <div class="col-md-6">
+            <app-star [rating]="detailProduct.starRating"> </app-star>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img
+          class="center-block img-responsive"
+          [style.width.px]="200"
+          [style.margin.px]="2"
+          [src]="detailProduct.imageUrl"
+          [title]="detailProduct.productName"
+        />
+      </div>
+    </div>
+  </div>
+</div> -->

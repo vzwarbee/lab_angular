@@ -1,0 +1,49 @@
+:root {
+    --color-title:#212529;
+    --color-btn_action: #47ad24;
+    --color-bg_yellow:#ffd333;
+    --color-red:#e52e2e;
+    --color-gray: #828599;
+}
+.red {
+    color: var(--color-red);
+}
+.error {
+    color: var(--color-red);
+    font-size: 14px;
+    
+}
+
+.title {
+    font-size: 28px;
+    color: var(--color-title);
+    font-family: Roboto !important;
+}
+
+.second-title {
+color: var(--color-gray);
+    font-family: Roboto !important;
+
+}
+.sub-title {
+    font-size: 24px;
+    color: var(--color-title);
+    font-family: Roboto !important;
+    font-weight: 600;
+}
+.desc {
+    font-size: 14px;
+    font-family: Roboto !important;
+    color: var(--color-gray);
+}
+
+.action {
+    transition: .3;
+}
+.ant-table-tbody tr td a.action:hover {
+    transform: scale(.9);
+}
+
+.Toastify__close-button {
+    width: 25px !important;
+}

@@ -1,7 +1,0 @@
-section{
-    display: grid;
-    flex-wrap: wrap;
-    gap: 20px;
-    grid-template-columns: 1fr auto auto;
-}
-

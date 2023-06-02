@@ -1,0 +1,20 @@
+.post-comment .heading {
+    padding: 10px 20px ;
+    width: 100%;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.bottom-comment p {
+    padding: 0 20px;
+}
+
+.noidung-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none ;
+}

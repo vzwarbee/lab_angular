@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root{
+  --color-131921: #131921;
+  --color-3b4149: #3b4149;
+  --color-febd69: #febd69;
+  --color-232f3e: #232f3e;
+  --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
+  --color-777: #777777;
+  --color-1c1c1b: #1c1c1b;
+  --color-ededed: #ededed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #e1e1e1;
+}
+
+
+.container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button {
+  background-color: var(--color-232f3e);
+  color: white;
+  font-size: 14px;
+  padding: 13px 33px;
+  border-radius: 25px;
+  transition: .25s;
+}
+
+.button:hover {
+  background-color: var(--color-febd69);
+  color: #131921;
+}
+
+.product-card {
+ box-shadow: 5px 8px 15px rgba( 0, 0, 0, 0.3), 4px 5px 10px rgba( 0, 0, 0, 0.4 );
+  transition: .3s;
+}
+.product-card:hover {
+ transform: translateY(-10px);
+ box-shadow: 5px 8px 20px rgba( 0, 0, 0, 0.3), 4px 5px 15px rgba( 0, 0, 0, 0.4 );
+}
+
+.error {
+  color: var(--bs-danger);
+  font-size: 12px;
+}
+
+.wishlist-btn {
+    font-size: 20px;
+    transition: .3s;
+}
+.wishlist-btn:hover {
+    scale: 1.1;
+    color: #bf4800;
+}

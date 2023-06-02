@@ -1,0 +1,14 @@
+.green {
+    color: var(--color-btn_action);
+}
+.red {
+    color: var(--color-red);
+}
+
+.button-action {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+}

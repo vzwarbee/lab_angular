@@ -18,3 +18,16 @@
 a {
     text-decoration: none ;
 }
+
+.form-comment {
+    margin-bottom: 80px !important;
+}
+
+.content-comment {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 0;
+    margin-bottom: 20px;
+    line-height: 30px;
+}

@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './component/UI/card/card.component';
 import { HomeComponent } from './component/pages/Home/home.component';
 import { UserDetailComponent } from './component/pages/user-detail/user-detail.component'
-import { PostDetailComponent } from './component/pages/post-detail/post-detail.component'
 import { CardPostComponent } from './component/UI/card-post/card-post.component';
 import { StarComponent } from './component/UI/star/star.component';
 import { ListProductComponent } from './component/pages/list-product/list-product.component';
@@ -15,6 +14,16 @@ import { PostComponent } from './component/pages/post/post.component';
 import { AppRoutingModule } from './app.routing';
 import { ProductCardComponent } from './component/UI/card/product-card/product-card.component';
 import { FooterComponent } from './component/pages/footer/footer.component';
+import { HeaderComponent } from './component/pages/header/header.component';
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCommonModule } from '@angular/material/core';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
+registerLocaleData(en);
 
 
 @NgModule({
@@ -24,13 +33,13 @@ import { FooterComponent } from './component/pages/footer/footer.component';
     CardPostComponent,
     HomeComponent,
     UserDetailComponent,
-    PostDetailComponent,
     ProductDetailComponent,
     StarComponent,
     ListProductComponent,
     PostComponent,
     ProductCardComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
 
 
   ],
@@ -38,10 +47,16 @@ import { FooterComponent } from './component/pages/footer/footer.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatCommonModule,
+    MatPaginatorModule
 
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -72,114 +72,94 @@
 
     <div class="post-comment pt-3">
       <h2 class="fw-bold heading text-light">Comment</h2>
-      <div class="container ps-5">
-        <div class="content-comment mb-3">
-          <div class="top-comment d-flex gap-3 align-items-center">
-            <div class="user-comment fs-3 fw-bold">Văn Tài</div>
-            <div class="rating">
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
+      <div class="container d-flex ps-5 mb-5">
+        <div class="" style="width: 40%; margin-right: 10%">
+          <div class="content-comment mb-3" *ngFor="let item of listComment">
+            <div class="top-comment d-flex gap-3 align-items-center">
+              <div class="user-comment fs-3 fw-bold">{{ item.fullName }}</div>
+            </div>
+            <app-star [rating]="item.rating"></app-star>
+            <div class="bottom-comment">
+              <p>
+                {{ item.commentContent }}
+              </p>
             </div>
           </div>
-          <div class="bottom-comment">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              ipsum placeat tempore numquam quibusdam, aperiam provident,
-              asperiores magni rem quis veniam reiciendis soluta iusto nihil,
-              dolor ipsam dignissimos distinctio voluptas. Ipsa voluptate sequi
-              dolor eos doloremque expedita sit dignissimos, nemo placeat fuga
-              doloribus porro eius veniam culpa officia obcaecati magnam cumque
-              autem similique! Libero, amet! Quo inventore harum sint? Mollitia
-              laborum unde quia, odit dicta harum doloremque, optio aspernatur
-              aut eum sint consequuntur, deleniti error odio ipsam qui quibusdam
-              alias! Inventore tempora repudiandae culpa voluptatibus eveniet
-              quibusdam incidunt atque, illo, qui accusantium distinctio
-              deserunt magni at et non dolore pariatur.
-            </p>
-          </div>
+          <mat-paginator
+            [length]="100"
+            [pageSize]="10"
+            [pageSizeOptions]="[5, 10, 25, 100]"
+            aria-label="Select page"
+          >
+          </mat-paginator>
         </div>
-        <div class="content-comment mb-3">
-          <div class="top-comment d-flex gap-3 align-items-center">
-            <div class="user-comment fs-3 fw-bold">Văn Tài</div>
-            <div class="rating">
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
+        <div class="form-comment w-50">
+          <form
+            action=""
+            class="position-relative"
+            (ngSubmit)="submitComment()"
+            [formGroup]="submitForm"
+          >
+            <div class="mb-3">
+              <label class="form-label">Choose Star</label>
+
+              <select
+                formControlName="rating"
+                class="form-select"
+                aria-label="Default select example"
+              >
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+                <option value="3.5">3.5</option>
+                <option value="4">4</option>
+                <option value="4.5">4.5</option>
+                <option value="5">5</option>
+              </select>
             </div>
-          </div>
-          <div class="bottom-comment">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              ipsum placeat tempore numquam quibusdam, aperiam provident,
-              asperiores magni rem quis veniam reiciendis soluta iusto nihil,
-              dolor ipsam dignissimos distinctio voluptas. Ipsa voluptate sequi
-              dolor eos doloremque expedita sit dignissimos, nemo placeat fuga
-              doloribus porro eius veniam culpa officia obcaecati magnam cumque
-              autem similique! Libero, amet! Quo inventore harum sint? Mollitia
-              laborum unde quia, odit dicta harum doloremque, optio aspernatur
-              aut eum sint consequuntur, deleniti error odio ipsam qui quibusdam
-              alias! Inventore tempora repudiandae culpa voluptatibus eveniet
-              quibusdam incidunt atque, illo, qui accusantium distinctio
-              deserunt magni at et non dolore pariatur.
-            </p>
-          </div>
-        </div>
-        <div class="content-comment mb-3">
-          <div class="top-comment d-flex gap-3 align-items-center">
-            <div class="user-comment fs-3 fw-bold">Văn Tài</div>
-            <div class="rating">
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
+
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Your Name</label>
+              <input
+                formControlName="fullName"
+                type="text"
+                class="form-control"
+                id="fullName"
+                placeholder="John Backam"
+              />
             </div>
-          </div>
-          <div class="bottom-comment">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              ipsum placeat tempore numquam quibusdam, aperiam provident,
-              asperiores magni rem quis veniam reiciendis soluta iusto nihil,
-              dolor ipsam dignissimos distinctio voluptas. Ipsa voluptate sequi
-              dolor eos doloremque expedita sit dignissimos, nemo placeat fuga
-              doloribus porro eius veniam culpa officia obcaecati magnam cumque
-              autem similique! Libero, amet! Quo inventore harum sint? Mollitia
-              laborum unde quia, odit dicta harum doloremque, optio aspernatur
-              aut eum sint consequuntur, deleniti error odio ipsam qui quibusdam
-              alias! Inventore tempora repudiandae culpa voluptatibus eveniet
-              quibusdam incidunt atque, illo, qui accusantium distinctio
-              deserunt magni at et non dolore pariatur.
-            </p>
-          </div>
-        </div>
-        <div class="content-comment mb-3">
-          <div class="top-comment d-flex gap-3 align-items-center">
-            <div class="user-comment fs-3 fw-bold">Văn Tài</div>
-            <div class="rating">
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
-              <span class="fa-star fa-solid"></span>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input
+                formControlName="email"
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="name@example.com"
+              />
             </div>
-          </div>
-          <div class="bottom-comment">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              ipsum placeat tempore numquam quibusdam, aperiam provident,
-              asperiores magni rem quis veniam reiciendis soluta iusto nihil,
-              dolor ipsam dignissimos distinctio voluptas. Ipsa voluptate sequi
-              dolor eos doloremque expedita sit dignissimos, nemo placeat fuga
-              doloribus porro eius veniam culpa officia obcaecati magnam cumque
-              autem similique! Libero, amet! Quo inventore harum sint? Mollitia
-              laborum unde quia, odit dicta harum doloremque, optio aspernatur
-              aut eum sint consequuntur, deleniti error odio ipsam qui quibusdam
-              alias! Inventore tempora repudiandae culpa voluptatibus eveniet
-              quibusdam incidunt atque, illo, qui accusantium distinctio
-              deserunt magni at et non dolore pariatur.
-            </p>
-          </div>
+            <div class="mb-3">
+              <label for="commentContent" class="form-label"
+                >Example textarea</label
+              >
+              <textarea
+                formControlName="commentContent"
+                class="form-control"
+                id="commentContent"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button
+              class="button position-absolute"
+              type="submit"
+              style="right: 10px"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </div>
     </div>
